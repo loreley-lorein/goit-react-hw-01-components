@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from './TransactionHistoryItem.module.css';
 
 const TransactionHistoryItem = ({ type, amount, currency }) => {
   return (
     <>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
+      <td className={s.data}>{type}</td>
+      <td className={s.data}>{amount}</td>
+      <td className={s.data}>{currency}</td>
     </>
   );
 };

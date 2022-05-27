@@ -13,6 +13,7 @@ const App = () => {
   return (
     <div>
       <Profile
+        // {...user}
         username={user.username}
         tag={user.tag}
         location={user.location}
